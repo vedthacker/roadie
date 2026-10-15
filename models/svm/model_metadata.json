@@ -1,0 +1,103 @@
+{
+  "project": "RoadEye",
+  "model_type": "sklearn.svm.SVC (HOG features, StandardScaler)",
+  "artifact_files": {
+    "model": "best_svm_model.joblib",
+    "scaler": "scaler.joblib",
+    "label_mapping": "label_mapping.json"
+  },
+  "pipeline": [
+    "ROI crop (training only; the app uses the whole image)",
+    "grayscale",
+    "resize (32, 32)",
+    "HOG",
+    "StandardScaler (fit on train)",
+    "SVC"
+  ],
+  "input_size": [
+    32,
+    32
+  ],
+  "hog_config": {
+    "orientations": 9,
+    "pixels_per_cell": [
+      4,
+      4
+    ],
+    "cells_per_block": [
+      2,
+      2
+    ],
+    "block_norm": "L2-Hys",
+    "transform_sqrt": true
+  },
+  "n_features": 1764,
+  "n_classes": 43,
+  "classes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42
+  ],
+  "dataset": "GTSRB - German Traffic Sign Recognition Benchmark (Final Training + Final Test + Test GT)",
+  "run_mode": "full_dataset",
+  "best_hyperparameters": {
+    "C": 10,
+    "gamma": "scale",
+    "kernel": "rbf"
+  },
+  "class_weight": "balanced",
+  "cv_macro_f1_on_tuning_subsample": 0.7767917251675712,
+  "validation_scores": {
+    "accuracy": 0.9486590038314177,
+    "f1_macro": 0.9356343952653469,
+    "precision_macro": 0.9569950721446036,
+    "recall_macro": 0.9294832987856243
+  },
+  "random_seed": 42,
+  "trained_at_utc": "2026-10-10T07:44:13+00:00",
+  "library_versions": {
+    "python": "3.14.7",
+    "scikit-learn": "1.9.1",
+    "numpy": "2.5.3"
+  }
+}

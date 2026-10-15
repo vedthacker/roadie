@@ -1,0 +1,139 @@
+{
+  "model": "Tuned HOG SVM",
+  "eval_split": "test",
+  "n_samples": 12630,
+  "run_mode": "full_dataset",
+  "inference_time_seconds": 177.09055950000766,
+  "inference_ms_per_sample": 14.021421971497043,
+  "accuracy": 0.9407759303246239,
+  "precision_macro": 0.952070562656627,
+  "recall_macro": 0.906931762840762,
+  "f1_macro": 0.9255542484442657,
+  "precision_weighted": 0.944139405171286,
+  "recall_weighted": 0.9407759303246239,
+  "f1_weighted": 0.9401454642909214,
+  "balanced_accuracy": 0.906931762840762,
+  "test_source": "official_gtsrb_test_set",
+  "n_test": 12630,
+  "train_accuracy": 1.0,
+  "validation_accuracy": 0.9486590038314177,
+  "validation_f1_macro": 0.9356343952653469,
+  "test_accuracy": 0.9407759303246239,
+  "generalisation_gap_val_minus_test_accuracy": 0.007883073506793736,
+  "worst_5_classes_by_f1": [
+    {
+      "class_id": 30,
+      "class_name": "Beware of ice/snow",
+      "precision": 0.875,
+      "recall": 0.56,
+      "f1": 0.6829268292682927,
+      "support": 150
+    },
+    {
+      "class_id": 42,
+      "class_name": "End of no passing by vehicles over 3.5 metric tons",
+      "precision": 0.8823529411764706,
+      "recall": 0.6666666666666666,
+      "f1": 0.759493670886076,
+      "support": 90
+    },
+    {
+      "class_id": 6,
+      "class_name": "End of speed limit (80km/h)",
+      "precision": 0.8059701492537313,
+      "recall": 0.72,
+      "f1": 0.7605633802816901,
+      "support": 150
+    },
+    {
+      "class_id": 41,
+      "class_name": "End of no passing",
+      "precision": 0.9767441860465116,
+      "recall": 0.7,
+      "f1": 0.8155339805825242,
+      "support": 60
+    },
+    {
+      "class_id": 23,
+      "class_name": "Slippery road",
+      "precision": 0.8243243243243243,
+      "recall": 0.8133333333333334,
+      "f1": 0.8187919463087249,
+      "support": 150
+    }
+  ],
+  "top_confusions": [
+    {
+      "true_class": 18,
+      "true_name": "General caution",
+      "predicted_class": 25,
+      "predicted_name": "Road work",
+      "count": 35
+    },
+    {
+      "true_class": 26,
+      "true_name": "Traffic signals",
+      "predicted_class": 25,
+      "predicted_name": "Road work",
+      "count": 35
+    },
+    {
+      "true_class": 30,
+      "true_name": "Beware of ice/snow",
+      "predicted_class": 11,
+      "predicted_name": "Right-of-way at the next intersection",
+      "count": 31
+    },
+    {
+      "true_class": 1,
+      "true_name": "Speed limit (30km/h)",
+      "predicted_class": 5,
+      "predicted_name": "Speed limit (80km/h)",
+      "count": 29
+    },
+    {
+      "true_class": 23,
+      "true_name": "Slippery road",
+      "predicted_class": 31,
+      "predicted_name": "Wild animals crossing",
+      "count": 28
+    },
+    {
+      "true_class": 3,
+      "true_name": "Speed limit (60km/h)",
+      "predicted_class": 5,
+      "predicted_name": "Speed limit (80km/h)",
+      "count": 26
+    },
+    {
+      "true_class": 5,
+      "true_name": "Speed limit (80km/h)",
+      "predicted_class": 2,
+      "predicted_name": "Speed limit (50km/h)",
+      "count": 25
+    },
+    {
+      "true_class": 42,
+      "true_name": "End of no passing by vehicles over 3.5 metric tons",
+      "predicted_class": 6,
+      "predicted_name": "End of speed limit (80km/h)",
+      "count": 25
+    },
+    {
+      "true_class": 22,
+      "true_name": "Bumpy road",
+      "predicted_class": 25,
+      "predicted_name": "Road work",
+      "count": 24
+    },
+    {
+      "true_class": 8,
+      "true_name": "Speed limit (120km/h)",
+      "predicted_class": 5,
+      "predicted_name": "Speed limit (80km/h)",
+      "count": 20
+    }
+  ],
+  "evaluated_model_md5": "dcfbcb0029de7cc25066e16a708c6800",
+  "forced_reevaluation": false
+}

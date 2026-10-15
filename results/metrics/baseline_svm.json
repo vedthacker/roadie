@@ -1,0 +1,31 @@
+{
+  "model": "Raw Pixel SVM",
+  "eval_split": "validation",
+  "n_samples": 7830,
+  "run_mode": "full_dataset",
+  "inference_time_seconds": 95.5422983999888,
+  "inference_ms_per_sample": 12.202081532565618,
+  "accuracy": 0.7150702426564496,
+  "precision_macro": 0.7069824679358433,
+  "recall_macro": 0.6551766902348298,
+  "f1_macro": 0.6550065323883011,
+  "precision_weighted": 0.7492719990691397,
+  "recall_weighted": 0.7150702426564496,
+  "f1_weighted": 0.7179945569452701,
+  "balanced_accuracy": 0.6551766902348298,
+  "train_metrics": {
+    "accuracy": 0.9049364224481341,
+    "precision_macro": 0.9148084310506553,
+    "recall_macro": 0.9361686332187493,
+    "f1_macro": 0.9168335150706525,
+    "precision_weighted": 0.9265307352143743,
+    "recall_weighted": 0.9049364224481341,
+    "f1_weighted": 0.9106732771242809,
+    "balanced_accuracy": 0.9361686332187493
+  },
+  "train_accuracy": 0.9049364224481341,
+  "training_time_seconds": 108.80284690001281,
+  "features": "Raw pixels (1024-d)",
+  "notes": "Baseline: untuned RBF SVM on flattened grayscale pixels",
+  "note_test": "Test-set results are produced once, by stage_final_eval."
+}

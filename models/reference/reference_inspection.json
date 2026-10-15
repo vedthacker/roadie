@@ -1,0 +1,54 @@
+{
+  "note": "Static inspection of external repositories (read-only clones, commit hashes below). No external pickle was unpickled (untrusted pickles can execute code). No external model was used to produce any number in this project.",
+  "inspection_date": "2026-10-07",
+  "repositories": [
+    {
+      "name": "omarbasha19/Computer-Vision-Traffic-Sign-Recognition",
+      "url": "https://github.com/omarbasha19/Computer-Vision-Traffic-Sign-Recognition",
+      "commit": "d7827562bfb8721eebf4be08cfc19f3e23aec1ee",
+      "tracked_files": ["README.md", "main.ipynb"],
+      "model_file_present": false,
+      "dataset_present": false,
+      "license_file": "none found",
+      "hog_config_in_notebook": {"orientations": 9, "pixels_per_cell": [8, 8], "cells_per_block": [2, 2], "block_norm": "L2-Hys", "transform_sqrt": true, "input": "32x32 RGB->gray"},
+      "classifier_in_notebook": "sklearn SVC(kernel='linear', probability=True); also a Keras CNN (out of scope here)",
+      "observation": "The notebook loads 'svm_model.pkl' but this file is NOT in the repository, so no pretrained model could be obtained from it."
+    },
+    {
+      "name": "ZhouJiaHuan/traffic-sign-detection",
+      "url": "https://github.com/ZhouJiaHuan/traffic-sign-detection",
+      "commit": "6e96c4e8c1466489ccaaaae536f7924421e4eeb2",
+      "model_file_present": true,
+      "model_file": "svm_hog_classification/svm_model.pkl (38,559,187 bytes) - NOT copied into this project",
+      "license_file": "none found",
+      "hog_config_in_source": {"input": "64x64 gray", "orientations": 9, "pixels_per_cell": [8, 8], "cells_per_block": [2, 2], "block_norm": "L2", "transform_sqrt": true},
+      "classifier_in_source": "sklearn SVC(C=10, tol=1e-3, probability=True), Python-2 era code",
+      "label_space": ["straight", "left", "right", "stop", "nohonk", "crosswalk", "background"],
+      "compatible_with_gtsrb_labels": false,
+      "observation": "7-class label space for a different traffic-sign dataset; HOG window 64x64 vs our 32x32; no GTSRB label mapping exists."
+    },
+    {
+      "name": "davidakhihiero/traffic-sign-classification",
+      "url": "https://github.com/davidakhihiero/traffic-sign-classification",
+      "commit": "429fa6ce78f719a215a046ee8b59f79189f35013",
+      "model_files": ["models/TrafficSignSVM.mat", "models/TrafficSignSVMSIFT.mat"],
+      "license_file": "MIT",
+      "implementation": "MATLAB: extractHOGFeatures (default parameters) + fitcecoc one-vs-one SVM on GTSRB",
+      "claimed_in_their_readme": "SVM+HOG ~92.20% accuracy (their claim, unverified, NOT our result)",
+      "compatible_with_python_evaluation": false,
+      "observation": "MATLAB .mat model: cannot be evaluated with scikit-learn; preprocessing/split not identical to ours."
+    },
+    {
+      "name": "nakul3112/Traffic-sign-recognition",
+      "url": "https://github.com/nakul3112/Traffic-sign-recognition",
+      "commit": "5cda53bde9d98b8c4f224e853adce546f3d65309",
+      "model_files": ["dataset.pkl (98,546,923 bytes) - described by its README as the trained SVM model; NOT copied, NOT unpickled"],
+      "license_file": "BSD-3-Clause",
+      "implementation": "Python/OpenCV: cv2.HOGDescriptor() default parameters + pickled sklearn classifier, detection + classification of signs in driving video",
+      "compatible_with_gtsrb_labels": "unknown",
+      "observation": "Different dataset/label scheme (template signs + driving video), default OpenCV HOG window; metadata incomplete for a fair comparison."
+    }
+  ],
+  "numerical_comparison_performed": false,
+  "statement": "Reference model was inspected as an external implementation, but direct numerical comparison was not performed because the original preprocessing/split/model metadata does not allow a scientifically fair comparison."
+}

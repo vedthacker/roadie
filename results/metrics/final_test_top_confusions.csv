@@ -1,0 +1,11 @@
+true_class,true_name,predicted_class,predicted_name,count
+18,General caution,25,Road work,35
+26,Traffic signals,25,Road work,35
+30,Beware of ice/snow,11,Right-of-way at the next intersection,31
+1,Speed limit (30km/h),5,Speed limit (80km/h),29
+23,Slippery road,31,Wild animals crossing,28
+3,Speed limit (60km/h),5,Speed limit (80km/h),26
+5,Speed limit (80km/h),2,Speed limit (50km/h),25
+42,End of no passing by vehicles over 3.5 metric tons,6,End of speed limit (80km/h),25
+22,Bumpy road,25,Road work,24
+8,Speed limit (120km/h),5,Speed limit (80km/h),20

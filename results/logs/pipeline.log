@@ -1,0 +1,19 @@
+11:48:01 AUDIT: building metadata (run mode: full_dataset)
+11:48:20 AUDIT done: 51839 files, 0 unreadable, 43 classes
+11:58:14 AUDIT: building metadata (run mode: full_dataset)
+11:59:11 AUDIT done: 51839 files, 0 unreadable, 43 classes
+12:02:26 AUDIT: building metadata (run mode: full_dataset)
+12:03:09 AUDIT done: 51839 files, 0 unreadable, 43 classes
+12:03:30 PREPARE done: train=31379 val=7830 test=12630 (official_gtsrb_test_set)
+12:14:08 BALANCING: Imbalance ratio 12.00 (severe). class_weight='balanced' vs None compared on the validation split by macro-F1 -> selected class_weight=balanced.
+12:23:55 BASELINE raw-pixel SVM val macro-F1 = 0.6550
+12:24:08 COMPARE HOG KNN val macro-F1 = 0.8842
+12:25:22 COMPARE HOG Decision Tree val macro-F1 = 0.7603
+12:38:49 COMPARE HOG SVM val macro-F1 = 0.9361
+12:38:49 TUNE svm ...
+13:14:12 TUNE svm best={'C': 10, 'gamma': 'scale', 'kernel': 'rbf'} cv=0.7768 val-F1 0.9361 -> 0.9356
+13:14:13 TUNE knn ...
+13:14:57 TUNE knn best={'n_neighbors': 7, 'weights': 'distance'} cv=0.7404 val-F1 0.8842 -> 0.8852
+13:14:57 TUNE tree ...
+13:20:38 TUNE tree best={'criterion': 'entropy', 'max_depth': 20, 'min_samples_leaf': 1} cv=0.5707 val-F1 0.7603 -> 0.7430
+13:20:39 FINAL EVALUATION on test set (single pass)

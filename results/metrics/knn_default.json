@@ -1,0 +1,31 @@
+{
+  "model": "HOG KNN",
+  "eval_split": "validation",
+  "n_samples": 7830,
+  "run_mode": "full_dataset",
+  "inference_time_seconds": 2.9618690999923274,
+  "inference_ms_per_sample": 0.37827191570783236,
+  "accuracy": 0.9033205619412515,
+  "precision_macro": 0.914642506045214,
+  "recall_macro": 0.875461992787574,
+  "f1_macro": 0.8841519766813779,
+  "precision_weighted": 0.9090801343617243,
+  "recall_weighted": 0.9033205619412515,
+  "f1_weighted": 0.9009489458321168,
+  "balanced_accuracy": 0.875461992787574,
+  "train_metrics": {
+    "accuracy": 0.991299913955193,
+    "precision_macro": 0.9938795845248993,
+    "recall_macro": 0.9920030490729352,
+    "f1_macro": 0.9928965494845867,
+    "precision_weighted": 0.991477773747955,
+    "recall_weighted": 0.991299913955193,
+    "f1_weighted": 0.9913306435021958,
+    "balanced_accuracy": 0.9920030490729352
+  },
+  "train_accuracy": 0.991299913955193,
+  "training_time_seconds": 0.020779000013135374,
+  "features": "HOG (1764-d)",
+  "notes": "k=5, uniform, euclidean (no class weights)",
+  "note_test": "Test-set results are produced once, by stage_final_eval."
+}

@@ -1,0 +1,31 @@
+{
+  "model": "Tuned HOG SVM",
+  "eval_split": "validation",
+  "n_samples": 7830,
+  "run_mode": "full_dataset",
+  "inference_time_seconds": 111.96059349999996,
+  "inference_ms_per_sample": 14.298926372924644,
+  "accuracy": 0.9486590038314177,
+  "precision_macro": 0.9569950721446036,
+  "recall_macro": 0.9294832987856243,
+  "f1_macro": 0.9356343952653469,
+  "precision_weighted": 0.9529745679108008,
+  "recall_weighted": 0.9486590038314177,
+  "f1_weighted": 0.9478209085997804,
+  "balanced_accuracy": 0.9294832987856243,
+  "train_metrics": {
+    "accuracy": 1.0,
+    "precision_macro": 1.0,
+    "recall_macro": 1.0,
+    "f1_macro": 1.0,
+    "precision_weighted": 1.0,
+    "recall_weighted": 1.0,
+    "f1_weighted": 1.0,
+    "balanced_accuracy": 1.0
+  },
+  "train_accuracy": 1.0,
+  "training_time_seconds": 141.18945790000726,
+  "features": "HOG (1764-d)",
+  "notes": "GridSearchCV best: {'C': 10, 'gamma': 'scale', 'kernel': 'rbf'}",
+  "note_test": "Test-set results are produced once, by stage_final_eval."
+}

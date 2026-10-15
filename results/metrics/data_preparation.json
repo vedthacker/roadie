@@ -1,0 +1,36 @@
+{
+  "n_before": 51839,
+  "removed_unreadable": 0,
+  "removed_label_mismatch_with_csv": 0,
+  "removed_label_conflicting_duplicates": 0,
+  "removed_exact_duplicates_kept_first": 0,
+  "n_after": 51839,
+  "scope": "full dataset",
+  "split": {
+    "train": {
+      "n_images": 31379,
+      "fraction": 0.6053164605798723,
+      "n_classes": 43,
+      "n_groups_tracks": 1046
+    },
+    "val": {
+      "n_images": 7830,
+      "fraction": 0.15104458033526882,
+      "n_classes": 43,
+      "n_groups_tracks": 261
+    },
+    "test": {
+      "n_images": 12630,
+      "fraction": 0.24363895908485889,
+      "n_classes": 43,
+      "n_groups_tracks": 12630
+    }
+  },
+  "leakage_check": {
+    "leakage_free": true,
+    "index_overlap": 0,
+    "train_val_group_overlap": 0,
+    "train_test_identical_files": 8,
+    "train_val_identical_files": 0
+  }
+}

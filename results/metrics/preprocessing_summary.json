@@ -1,0 +1,8 @@
+{
+  "n_samples_after_cleaning_and_preprocessing": 51839,
+  "n_features_raw_pixels": 1024,
+  "n_features_hog": 1764,
+  "load_and_preprocess_seconds_this_call": 4.40270859998418,
+  "hog_seconds_this_call": 10.185183399997186,
+  "note": "seconds measure this call; cached runs are much faster"
+}

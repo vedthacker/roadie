@@ -1,0 +1,23 @@
+{
+  "primary_metric": "f1_macro",
+  "split": "validation",
+  "run_mode": "full_dataset",
+  "RQ1_raw_vs_hog_svm": {
+    "raw_f1_macro": 0.6550065323883011,
+    "hog_f1_macro": 0.936055554953326,
+    "raw_accuracy": 0.7150702426564496,
+    "hog_accuracy": 0.9478927203065134,
+    "hog_improves_f1_macro": true,
+    "absolute_f1_macro_difference": 0.28104902256502495
+  },
+  "RQ2_best_untuned_hog_classifier": {
+    "model": "HOG SVM",
+    "metric": "f1_macro",
+    "value": 0.936055554953326
+  },
+  "overall_best_on_validation": {
+    "model": "HOG SVM",
+    "metric": "f1_macro",
+    "value": 0.936055554953326
+  }
+}

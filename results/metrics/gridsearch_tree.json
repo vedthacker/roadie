@@ -1,0 +1,284 @@
+{
+  "model": "tree",
+  "scoring": "f1_macro",
+  "cv_folds": 3,
+  "cv_type": "StratifiedGroupKFold (grouped by sign track)",
+  "n_samples_used_in_search": 10469,
+  "n_training_samples_available": 31379,
+  "subsampled": true,
+  "search_space": [
+    {
+      "max_depth": [
+        "10",
+        "20",
+        "40",
+        "None"
+      ],
+      "min_samples_leaf": [
+        "1",
+        "3",
+        "5"
+      ],
+      "criterion": [
+        "gini",
+        "entropy"
+      ]
+    }
+  ],
+  "n_candidates": 24,
+  "n_fits": 72,
+  "best_params": {
+    "criterion": "entropy",
+    "max_depth": 20,
+    "min_samples_leaf": 1
+  },
+  "best_cv_score": 0.5706537933745167,
+  "search_time_seconds": 159.8191050000023,
+  "cv_results": [
+    {
+      "mean_fit_time": 17.336850961049397,
+      "param_criterion": "gini",
+      "param_max_depth": "10",
+      "param_min_samples_leaf": "1",
+      "mean_test_score": 0.29307178087189484,
+      "std_test_score": 0.043871734194347395,
+      "rank_test_score": 24,
+      "mean_train_score": 0.46639884502559087
+    },
+    {
+      "mean_fit_time": 17.80197310447693,
+      "param_criterion": "gini",
+      "param_max_depth": "10",
+      "param_min_samples_leaf": "3",
+      "mean_test_score": 0.2999232296081759,
+      "std_test_score": 0.04668821604400578,
+      "rank_test_score": 23,
+      "mean_train_score": 0.46105514931361613
+    },
+    {
+      "mean_fit_time": 17.488107442855835,
+      "param_criterion": "gini",
+      "param_max_depth": "10",
+      "param_min_samples_leaf": "5",
+      "mean_test_score": 0.30666594935161934,
+      "std_test_score": 0.04874925205226036,
+      "rank_test_score": 22,
+      "mean_train_score": 0.4534754088377606
+    },
+    {
+      "mean_fit_time": 27.741356293360393,
+      "param_criterion": "gini",
+      "param_max_depth": "20",
+      "param_min_samples_leaf": "1",
+      "mean_test_score": 0.5590872081552952,
+      "std_test_score": 0.025947959557003162,
+      "rank_test_score": 13,
+      "mean_train_score": 0.9044727403518151
+    },
+    {
+      "mean_fit_time": 27.422436555226643,
+      "param_criterion": "gini",
+      "param_max_depth": "20",
+      "param_min_samples_leaf": "3",
+      "mean_test_score": 0.5540034920830825,
+      "std_test_score": 0.019818079867423434,
+      "rank_test_score": 18,
+      "mean_train_score": 0.8734875000989355
+    },
+    {
+      "mean_fit_time": 30.61898374557495,
+      "param_criterion": "gini",
+      "param_max_depth": "20",
+      "param_min_samples_leaf": "5",
+      "mean_test_score": 0.552480217844328,
+      "std_test_score": 0.0199723075857163,
+      "rank_test_score": 19,
+      "mean_train_score": 0.8514901873292894
+    },
+    {
+      "mean_fit_time": 31.711902379989624,
+      "param_criterion": "gini",
+      "param_max_depth": "40",
+      "param_min_samples_leaf": "1",
+      "mean_test_score": 0.5651100330947094,
+      "std_test_score": 0.020721517007887942,
+      "rank_test_score": 6,
+      "mean_train_score": 0.9990271414767654
+    },
+    {
+      "mean_fit_time": 30.64231562614441,
+      "param_criterion": "gini",
+      "param_max_depth": "40",
+      "param_min_samples_leaf": "3",
+      "mean_test_score": 0.5651117497369212,
+      "std_test_score": 0.025787733682624124,
+      "rank_test_score": 5,
+      "mean_train_score": 0.9402765152535079
+    },
+    {
+      "mean_fit_time": 30.002352873484295,
+      "param_criterion": "gini",
+      "param_max_depth": "40",
+      "param_min_samples_leaf": "5",
+      "mean_test_score": 0.5520603906094527,
+      "std_test_score": 0.021904935443723458,
+      "rank_test_score": 20,
+      "mean_train_score": 0.8996347389367805
+    },
+    {
+      "mean_fit_time": 34.29377762476603,
+      "param_criterion": "gini",
+      "param_max_depth": NaN,
+      "param_min_samples_leaf": "1",
+      "mean_test_score": 0.5577459160779329,
+      "std_test_score": 0.030304999108809506,
+      "rank_test_score": 16,
+      "mean_train_score": 1.0
+    },
+    {
+      "mean_fit_time": 34.2807289759318,
+      "param_criterion": "gini",
+      "param_max_depth": NaN,
+      "param_min_samples_leaf": "3",
+      "mean_test_score": 0.566205967067494,
+      "std_test_score": 0.024366309401813366,
+      "rank_test_score": 4,
+      "mean_train_score": 0.9404082835137482
+    },
+    {
+      "mean_fit_time": 33.97589683532715,
+      "param_criterion": "gini",
+      "param_max_depth": NaN,
+      "param_min_samples_leaf": "5",
+      "mean_test_score": 0.5520603906094527,
+      "std_test_score": 0.021904935443723458,
+      "rank_test_score": 20,
+      "mean_train_score": 0.8996347389367805
+    },
+    {
+      "mean_fit_time": 88.46329585711162,
+      "param_criterion": "entropy",
+      "param_max_depth": "10",
+      "param_min_samples_leaf": "1",
+      "mean_test_score": 0.5577619637570242,
+      "std_test_score": 0.012631871041145307,
+      "rank_test_score": 15,
+      "mean_train_score": 0.9164434898214054
+    },
+    {
+      "mean_fit_time": 82.27144837379456,
+      "param_criterion": "entropy",
+      "param_max_depth": "10",
+      "param_min_samples_leaf": "3",
+      "mean_test_score": 0.558807395709557,
+      "std_test_score": 0.010914344507658625,
+      "rank_test_score": 14,
+      "mean_train_score": 0.8889053267843945
+    },
+    {
+      "mean_fit_time": 83.92760507265727,
+      "param_criterion": "entropy",
+      "param_max_depth": "10",
+      "param_min_samples_leaf": "5",
+      "mean_test_score": 0.5559571125308139,
+      "std_test_score": 0.019671356624598974,
+      "rank_test_score": 17,
+      "mean_train_score": 0.8680076119839436
+    },
+    {
+      "mean_fit_time": 85.75683379173279,
+      "param_criterion": "entropy",
+      "param_max_depth": "20",
+      "param_min_samples_leaf": "1",
+      "mean_test_score": 0.5706537933745167,
+      "std_test_score": 0.0182035341674308,
+      "rank_test_score": 1,
+      "mean_train_score": 1.0
+    },
+    {
+      "mean_fit_time": 86.2469334602356,
+      "param_criterion": "entropy",
+      "param_max_depth": "20",
+      "param_min_samples_leaf": "3",
+      "mean_test_score": 0.5612968028763405,
+      "std_test_score": 0.018020849026606185,
+      "rank_test_score": 7,
+      "mean_train_score": 0.944369179081706
+    },
+    {
+      "mean_fit_time": 85.73747658729553,
+      "param_criterion": "entropy",
+      "param_max_depth": "20",
+      "param_min_samples_leaf": "5",
+      "mean_test_score": 0.5594926904447366,
+      "std_test_score": 0.017996418378536203,
+      "rank_test_score": 10,
+      "mean_train_score": 0.9076229175621874
+    },
+    {
+      "mean_fit_time": 88.40228303273518,
+      "param_criterion": "entropy",
+      "param_max_depth": "40",
+      "param_min_samples_leaf": "1",
+      "mean_test_score": 0.5706537933745167,
+      "std_test_score": 0.0182035341674308,
+      "rank_test_score": 1,
+      "mean_train_score": 1.0
+    },
+    {
+      "mean_fit_time": 81.22129972775777,
+      "param_criterion": "entropy",
+      "param_max_depth": "40",
+      "param_min_samples_leaf": "3",
+      "mean_test_score": 0.5612968028763405,
+      "std_test_score": 0.018020849026606185,
+      "rank_test_score": 7,
+      "mean_train_score": 0.944369179081706
+    },
+    {
+      "mean_fit_time": 79.19370333353679,
+      "param_criterion": "entropy",
+      "param_max_depth": "40",
+      "param_min_samples_leaf": "5",
+      "mean_test_score": 0.5594926904447366,
+      "std_test_score": 0.017996418378536203,
+      "rank_test_score": 10,
+      "mean_train_score": 0.9076229175621874
+    },
+    {
+      "mean_fit_time": 60.959950844446816,
+      "param_criterion": "entropy",
+      "param_max_depth": NaN,
+      "param_min_samples_leaf": "1",
+      "mean_test_score": 0.5706537933745167,
+      "std_test_score": 0.0182035341674308,
+      "rank_test_score": 1,
+      "mean_train_score": 1.0
+    },
+    {
+      "mean_fit_time": 49.56549302736918,
+      "param_criterion": "entropy",
+      "param_max_depth": NaN,
+      "param_min_samples_leaf": "3",
+      "mean_test_score": 0.5612968028763405,
+      "std_test_score": 0.018020849026606185,
+      "rank_test_score": 7,
+      "mean_train_score": 0.944369179081706
+    },
+    {
+      "mean_fit_time": 45.23982564608256,
+      "param_criterion": "entropy",
+      "param_max_depth": NaN,
+      "param_min_samples_leaf": "5",
+      "mean_test_score": 0.5594926904447366,
+      "std_test_score": 0.017996418378536203,
+      "rank_test_score": 10,
+      "mean_train_score": 0.9076229175621874
+    }
+  ],
+  "validation_f1_macro_before_tuning": 0.7602557135459239,
+  "validation_f1_macro_after_tuning": 0.743003071347955,
+  "validation_accuracy_before_tuning": 0.7790549169859514,
+  "validation_accuracy_after_tuning": 0.7699872286079182,
+  "run_mode": "full_dataset"
+}

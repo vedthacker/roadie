@@ -1,0 +1,31 @@
+{
+  "train_distribution": {
+    "imbalance_ratio_max_over_min": 12.0,
+    "min_class": 37,
+    "min_count": 150,
+    "max_class": 2,
+    "max_count": 1800,
+    "normalised_entropy": 0.9267047513412308,
+    "severity": "severe"
+  },
+  "experiment_on_validation": {
+    "None": {
+      "val_accuracy": 0.9471264367816092,
+      "val_f1_macro": 0.9335162631814747,
+      "val_balanced_accuracy": 0.926394354999006
+    },
+    "balanced": {
+      "val_accuracy": 0.9478927203065134,
+      "val_f1_macro": 0.936055554953326,
+      "val_balanced_accuracy": 0.9308771805283433
+    }
+  },
+  "decision": "Imbalance ratio 12.00 (severe). class_weight='balanced' vs None compared on the validation split by macro-F1 -> selected class_weight=balanced.",
+  "selected_class_weight": "balanced",
+  "run_mode": "full_dataset",
+  "alternatives_rejected": {
+    "SMOTE": "interpolated HOG vectors are not valid sign images and risk leakage if applied before splitting",
+    "random_oversampling": "duplicates near-identical frames, longer training, over-fitting risk",
+    "undersampling": "discards scarce real data from already small classes"
+  }
+}

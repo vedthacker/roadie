@@ -1,0 +1,31 @@
+{
+  "model": "Tuned HOG KNN",
+  "eval_split": "validation",
+  "n_samples": 7830,
+  "run_mode": "full_dataset",
+  "inference_time_seconds": 3.390445400000317,
+  "inference_ms_per_sample": 0.43300707535125377,
+  "accuracy": 0.9047254150702426,
+  "precision_macro": 0.9162259087565036,
+  "recall_macro": 0.8760237243376778,
+  "f1_macro": 0.8851571556491932,
+  "precision_weighted": 0.912517650051746,
+  "recall_weighted": 0.9047254150702426,
+  "f1_weighted": 0.9034042253968326,
+  "balanced_accuracy": 0.8760237243376778,
+  "train_metrics": {
+    "accuracy": 1.0,
+    "precision_macro": 1.0,
+    "recall_macro": 1.0,
+    "f1_macro": 1.0,
+    "precision_weighted": 1.0,
+    "recall_weighted": 1.0,
+    "f1_weighted": 1.0,
+    "balanced_accuracy": 1.0
+  },
+  "train_accuracy": 1.0,
+  "training_time_seconds": 0.41540209998493083,
+  "features": "HOG (1764-d)",
+  "notes": "GridSearchCV best: {'n_neighbors': 7, 'weights': 'distance'}",
+  "note_test": "Test-set results are produced once, by stage_final_eval."
+}

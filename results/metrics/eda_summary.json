@@ -1,0 +1,29 @@
+{
+  "run_mode": "full_dataset",
+  "n_train_images": 31379,
+  "n_dark_train_images": 6281,
+  "n_low_contrast_train_images": 5780,
+  "brightness": {
+    "mean": 84.0313720703125,
+    "std": 47.52289962768555,
+    "min": 6.75,
+    "max": 250.328125,
+    "n_iqr_outliers": 155
+  },
+  "contrast_mean": 38.26353073120117,
+  "spearman_class_size_vs_median_width": {
+    "rho": -0.12843063517026249
+  },
+  "most_similar_class_pair": {
+    "class_a": 2,
+    "name_a": "Speed limit (50km/h)",
+    "class_b": 5,
+    "name_b": "Speed limit (80km/h)",
+    "cosine_similarity": 0.9859974384307861
+  },
+  "hog_feature_stats": {
+    "mean": 0.10057822614908218,
+    "std": 0.132830411195755,
+    "share_zero": 0.40916903937575083
+  }
+}

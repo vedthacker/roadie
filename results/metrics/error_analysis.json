@@ -1,0 +1,36 @@
+{
+  "n_errors": 748,
+  "n_test": 12630,
+  "error_rate": 0.059224069675376086,
+  "share_of_errors_between_speed_limit_signs": 0.39572192513368987,
+  "error_rate_by_original_image_size": [
+    {
+      "original_min_side": "<30",
+      "n": 1354,
+      "error_rate": 0.13220088626292467
+    },
+    {
+      "original_min_side": "30-39",
+      "n": 4191,
+      "error_rate": 0.06704843712717728
+    },
+    {
+      "original_min_side": "40-49",
+      "n": 2758,
+      "error_rate": 0.04568527918781726
+    },
+    {
+      "original_min_side": "50-69",
+      "n": 2507,
+      "error_rate": 0.04028719585161548
+    },
+    {
+      "original_min_side": "70+",
+      "n": 1820,
+      "error_rate": 0.033516483516483515
+    }
+  ],
+  "spearman_train_class_size_vs_recall": {
+    "rho": 0.361703287393978
+  }
+}

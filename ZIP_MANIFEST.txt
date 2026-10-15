@@ -1,0 +1,2 @@
+files: 80
+excluded by design: virtual env, __pycache__, .git, data/raw, data/processed

@@ -1,0 +1,11 @@
+class_a,name_a,class_b,name_b,cosine_similarity
+2,Speed limit (50km/h),5,Speed limit (80km/h),0.9859974384307861
+7,Speed limit (100km/h),8,Speed limit (120km/h),0.9849047660827637
+3,Speed limit (60km/h),5,Speed limit (80km/h),0.9838043451309204
+1,Speed limit (30km/h),5,Speed limit (80km/h),0.9830778241157532
+1,Speed limit (30km/h),2,Speed limit (50km/h),0.9795351624488831
+2,Speed limit (50km/h),3,Speed limit (60km/h),0.976216197013855
+1,Speed limit (30km/h),3,Speed limit (60km/h),0.9761042594909668
+18,General caution,26,Traffic signals,0.9726004004478455
+4,Speed limit (70km/h),5,Speed limit (80km/h),0.971565842628479
+23,Slippery road,29,Bicycles crossing,0.971346378326416
